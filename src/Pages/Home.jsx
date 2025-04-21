@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   const categories = [
-    { name: "Electronics", img: `public/images/d3.jpeg`},
+    { name: "Electronics", img: public/images/d3.jpeg},
     { name: "Fashion", img: "https://images.unsplash.com/photo-1521334884684-d80222895322" },
     { name: "Home Decor", img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511" },
     { name: "Accessories", img: "https://images.unsplash.com/photo-1587560699334-bea93391dcef" },
