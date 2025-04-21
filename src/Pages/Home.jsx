@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   const categories = [
-    { name: "Electronics", img: "/images/d3.jpeg"},
-    { name: "Fashion", img: "https://images.unsplash.com/photo-1521334884684-d80222895322" },
-    { name: "Home Decor", img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511" },
-    { name: "Accessories", img: "https://images.unsplash.com/photo-1587560699334-bea93391dcef" },
-  ];
+  { name: "Electronics", img: "/images/d3.jpeg" }, // ✅
+  { name: "Fashion", img: "https://images.unsplash.com/photo-1521334884684-d80222895322" },
+  { name: "Home Decor", img: "https://images.unsplash.com/photo-1505691938895-1758d7feb511" },
+  { name: "Accessories", img: "https://images.unsplash.com/photo-1587560699334-bea93391dcef" },
+];
 
-  const products = [
-    {
-      name: "Watch",
-      price: "$89.99",
-      image: `public/images/wimg.jpeg`
-    },
-    {
-      name: "Laptop",
-      price: "$129.99",
-      image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
-    },
-    {
-      name: "Stylish Lamp",
-      price: "$59.99",
-      image: `public/images/d1.jpeg`
-    },
-    {
-      name: "Leather Wallet",
-      price: "$39.99",
-      image: `public/images/d2.jpg`
-    },
-  ];
+const products = [
+  {
+    name: "Watch",
+    price: "₹89.99",
+    image: "/images/wimg.jpeg" // ✅
+  },
+  {
+    name: "Laptop",
+    price: "₹129.99",
+    image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+  },
+  {
+    name: "Stylish Lamp",
+    price: "₹59.99",
+    image: "/images/d1.jpeg" // ✅
+  },
+  {
+    name: "Leather Wallet",
+    price: "₹39.99",
+    image: "/images/d2.jpg" // ✅
+  },
+];
 
   return (
     <div className="w-full min-h-screen bg-gray-100">
