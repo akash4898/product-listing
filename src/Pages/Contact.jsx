@@ -5,7 +5,6 @@ import { app } from "../Firebase";
 import { v4 as uuidv4 } from 'uuid';
 import { Context } from '../Context/MainContext';
 
-
 const ContactUs = () => {
     const { toast } = useContext(Context);
     const [errors, setErrors] = useState({});
@@ -57,16 +56,12 @@ const ContactUs = () => {
 
     return (
         <div className="max-w-7xl mx-auto p-6 md:p-12 bg-gray-50">
-            <div className="relative h-64 md:h-96 lg:h-[400px] w-full bg-cover bg-center" 
+            <div className="relative h-64 md:h-96 lg:h-[400px] w-full bg-cover bg-center"
                 style={{ backgroundImage: "url('/images/contact-us-banner.jpg')" }}>
                 <div className="absolute inset-0 bg-black/50"></div>
-                {/* <h2 className="absolute inset-0 flex items-center justify-left text-2xl md:text-4xl font-bold text-white">
-                    Get in Touch
-                </h2> */}
             </div>
 
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8  mt-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
                 <div className="bg-white shadow-xl rounded-2xl p-8">
                     <h3 className="text-2xl font-semibold mb-6 text-gray-800">Send Us a Message</h3>
                     <form className="space-y-5" onSubmit={getContactUsData}>
@@ -83,11 +78,14 @@ const ContactUs = () => {
                             {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                         </div>
                         <textarea placeholder="Your Message" className="w-full p-4 border rounded-xl h-36" name="textarea"></textarea>
-                        <button className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white py-4 rounded-xl hover:opacity-90 transition font-semibold">Submit</button>
+                        <button className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white py-4 rounded-xl hover:opacity-90 transition font-semibold">
+                            Submit
+                        </button>
                     </form>
                 </div>
+
                 <div className="bg-gray-100 shadow-xl rounded-2xl p-8 flex flex-col justify-center items-center text-center">
-                    <img src="public/images/contact-us-banner.jpg" alt="Office" className="rounded-xl shadow-md mb-6" />
+                    <img src="/images/contact-us-banner.jpg" alt="Office" className="rounded-xl shadow-md mb-6" />
                     <h3 className="text-2xl font-semibold mb-4 text-gray-800">Contact Information</h3>
                     <p className="flex items-center gap-3 mb-3 text-gray-700"><FaMapMarkerAlt className="text-blue-600" /> Kailash Chand Harish Kumar Shoe's Merchant Sadar Bazar</p>
                     <p className="flex items-center gap-3 mb-3 text-gray-700"><FaPhone className="text-blue-600" /> +91 8619187353 , 7023082475</p>
